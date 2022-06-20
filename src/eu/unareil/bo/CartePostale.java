@@ -54,7 +54,6 @@ public class CartePostale extends Produit {
 
     @Override
     public String toString() {
-        
         return "CartePostale [type=" + type + ", auteur=" + auteur + ", list=" + list + "]";
     }
 
