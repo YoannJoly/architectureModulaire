@@ -30,7 +30,7 @@ public class Pain extends ProduitPerissable {
 
     @Override
     public String toString() {
-        return "Pain [poids=" + poids + "]";
+        return "Pain [poids=" + poids + "g]";
     }
 
 }
