@@ -8,16 +8,13 @@ public class Stylo extends Produit {
     public Stylo() {
     }
 
-    public Stylo(final long refProd, final String libelle, final String marque, final float prixUnitaire,
-            final long qteStock, final String couleur,
-            final String typeMine) {
+    public Stylo(final long refProd, final String libelle, final String marque, final float prixUnitaire, final long qteStock, final String couleur, final String typeMine) {
         super(refProd, libelle, marque, prixUnitaire, qteStock);
         this.couleur = couleur;
         this.typeMine = typeMine;
     }
 
-    public Stylo(final String marque, final String libelle, final long qteStock, final float prixUnitaire,
-            final String couleur, final String typeMine) {
+    public Stylo(final String marque, final String libelle, final long qteStock, final float prixUnitaire, final String couleur, final String typeMine) {
         super(libelle, marque, prixUnitaire, qteStock);
         this.couleur = couleur;
         this.typeMine = typeMine;
@@ -38,5 +35,6 @@ public class Stylo extends Produit {
     public void setTypeMine(final String typeMine) {
         this.typeMine = typeMine;
     }
+
 
 }

@@ -9,8 +9,9 @@ public class Pain extends ProduitPerissable {
     public Pain() {
     }
 
-    public Pain(final long refProd, final String libelle, final String marque, final float prixUnitaire, final long qteStock,
-            final LocalDate dateLimiteConso, final int poids) {
+    public Pain(final long refProd, final String libelle, final String marque, final float prixUnitaire,
+                final long qteStock,
+                final LocalDate dateLimiteConso, final int poids) {
         super(refProd, libelle, marque, prixUnitaire, qteStock, dateLimiteConso);
         this.poids = poids;
     }

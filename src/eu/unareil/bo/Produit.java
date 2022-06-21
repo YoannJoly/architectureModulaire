@@ -26,8 +26,8 @@ public class Produit {
         this.qteStock = qteStock;
     }
 
-    public long getRefProd() {
-        return refProd;
+    public int getRefProd() {
+        return (int) refProd;
     }
 
     public void setRefProd(final long refProd) {
@@ -58,8 +58,8 @@ public class Produit {
         this.prixUnitaire = prixUnitaire;
     }
 
-    public long getQteStock() {
-        return qteStock;
+    public int getQteStock() {
+        return (int) qteStock;
     }
 
     public void setQteStock(final long qteStock) {

@@ -54,8 +54,7 @@ public class Achat {
 
     @Override
     public String toString() {
-        return "Achat [montant=" + montant + ", lignesAchat=" + lignesAchat + "] " + "\nTotal de l'achat : "
-                + calculMontant() + "€";
+        return "Achat [montant=" + montant + ", lignesAchat=" + lignesAchat + "] " + "\nTotal de l'achat : " + calculMontant() + "€";
     }
 
 }

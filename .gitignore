@@ -2,3 +2,8 @@
 bin
 lib
 .DS_Store
+.idea
+architectureModulaire.iml
+out
+src/eu/unareil/dal/jdbc/settings.properties
+
