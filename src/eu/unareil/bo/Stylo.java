@@ -3,7 +3,7 @@ package eu.unareil.bo;
 public class Stylo extends Produit {
 
     private String couleur;
-    private String typeMine;
+    private  String typeMine;
 
     public Stylo() {
     }
@@ -20,7 +20,7 @@ public class Stylo extends Produit {
         this.typeMine = typeMine;
     }
 
-    public String getCouleur() {
+    public  String getCouleur() {
         return couleur;
     }
 
@@ -28,7 +28,7 @@ public class Stylo extends Produit {
         this.couleur = couleur;
     }
 
-    public String getTypeMine() {
+    public  String getTypeMine() {
         return typeMine;
     }
 

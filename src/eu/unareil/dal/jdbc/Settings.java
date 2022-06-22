@@ -11,7 +11,7 @@ public class Settings {
     static {
         properties = new Properties();
         try {
-            properties.load(Settings.class.getResourceAsStream("/dal/jdbc/settings.properties"));
+            properties.load(Settings.class.getResourceAsStream("/eu/unareil/dal/jdbc/settings.properties"));
         } catch (IOException e) {
             try {
                 throw new DALException("Properties file not found", e);

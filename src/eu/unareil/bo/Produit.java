@@ -68,8 +68,7 @@ public class Produit {
 
     @Override
     public String toString() {
-        return "Produit [refProd=" + refProd + ", libelle=" + libelle + ", marque=" + marque + ", prixUnitaire="
-                + prixUnitaire + "€, qteStock=" + qteStock + "]";
+        return "Produit [refProd=" + refProd + ", libelle=" + libelle + ", marque=" + marque + ", prixUnitaire=" + prixUnitaire + "€, qteStock=" + qteStock + "]";
     }
 
 }

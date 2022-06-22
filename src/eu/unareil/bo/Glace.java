@@ -4,8 +4,9 @@ import java.time.LocalDate;
 
 public class Glace extends ProduitPerissable {
 
-    private String parfum;
-    private int temperatureConservation;
+    private  String parfum;
+    private  int temperatureConservation;
+
 
     public Glace() {
     }
@@ -26,21 +27,23 @@ public class Glace extends ProduitPerissable {
         this.temperatureConservation = temperatureConservation;
     }
 
-    public String getParfum() {
+    public  String getParfum() {
         return parfum;
     }
 
-    public void setParfum(final String parfum) {
+    public  void setParfum(final String parfum) {
         this.parfum = parfum;
     }
 
-    public int getTemperatureConservation() {
+    public  int getTemperatureConservation() {
         return temperatureConservation;
     }
 
     public void setTemperatureConservation(final int temperatureConservation) {
         this.temperatureConservation = temperatureConservation;
     }
+
+
 
     @Override
     public String toString() {

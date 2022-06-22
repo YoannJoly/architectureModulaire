@@ -11,6 +11,7 @@ import java.sql.SQLException;
 public class AuteurJdbcImpl implements DAO<Auteur> {
     private static final String SQL_INSERT = "INSERT INTO auteur (nom, prenom) VALUES (?, ?)";
 
+
     @Override
     public void insert(final Auteur obj) throws DALException {
         try (Connection connection = jdbcTools.getConnection()) {
