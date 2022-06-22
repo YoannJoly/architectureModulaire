@@ -11,6 +11,7 @@ import java.sql.SQLException;
 public class PainJdbcImpl implements DAO<Pain> {
 
     private static final String SQL_INSERT = "INSERT INTO produit (refProd, libelle, marque, prixUnitaire, qteStock,  poids) VALUES (?, ?, ?, ?, ?, ?)";
+
     @Override
     public void insert(final Pain obj) throws DALException {
         try (Connection connection = jdbcTools.getConnection()) {

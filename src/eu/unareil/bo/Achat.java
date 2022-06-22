@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Achat {
 
-    private double montant;
     private final List<Ligne> lignesAchat = new ArrayList<Ligne>();
+    private double montant;
 
     public Achat(final Ligne ligne) {
         this.lignesAchat.add(ligne);

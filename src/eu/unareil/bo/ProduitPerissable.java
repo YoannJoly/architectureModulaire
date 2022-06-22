@@ -9,14 +9,12 @@ public class ProduitPerissable extends Produit {
     public ProduitPerissable() {
     }
 
-    public ProduitPerissable(final long refProd, final String libelle, final String marque, final float prixUnitaire, final long qteStock,
-            final LocalDate dateLimiteConso) {
+    public ProduitPerissable(final long refProd, final String libelle, final String marque, final float prixUnitaire, final long qteStock, final LocalDate dateLimiteConso) {
         super(refProd, libelle, marque, prixUnitaire, qteStock);
         ProduitPerissable.dateLimiteConso = dateLimiteConso;
     }
 
-    public ProduitPerissable(final String libelle, final String marque, final float prixUnitaire, final long qteStock,
-            final LocalDate dateLimiteConso) {
+    public ProduitPerissable(final String libelle, final String marque, final float prixUnitaire, final long qteStock, final LocalDate dateLimiteConso) {
         super(libelle, marque, prixUnitaire, qteStock);
         ProduitPerissable.dateLimiteConso = dateLimiteConso;
     }

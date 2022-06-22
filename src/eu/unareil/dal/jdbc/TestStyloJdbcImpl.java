@@ -13,7 +13,5 @@ public class TestStyloJdbcImpl {
         StyloJdbcImpl styloJdbcImpl = new StyloJdbcImpl();
         styloJdbcImpl.insert(stylo);
         jdbcTools.closeConnection(connection);
-
-
     }
 }

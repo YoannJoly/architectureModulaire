@@ -2,8 +2,8 @@ package eu.unareil.bo;
 
 public class Ligne {
 
-    private int quantite;
     Produit produit = new Produit();
+    private int quantite;
 
     public Ligne() {
     }

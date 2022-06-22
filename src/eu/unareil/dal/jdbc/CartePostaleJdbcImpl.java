@@ -1,19 +1,18 @@
 package eu.unareil.dal.jdbc;
 
-import eu.unareil.bo.Glace;
-import eu.unareil.bo.ProduitPerissable;
+import eu.unareil.bo.CartePostale;
 import eu.unareil.dal.DALException;
 import eu.unareil.dal.DAO;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class GlaceJdbcImpl implements DAO<Glace> {
-    private static final String SQL_INSERT = "INSERT INTO produit (refProd, libelle, marque, prixUnitaire, qteStock,  parfum, temperatureConservation, dateLimiteConso) VALUES (?, ?, ?, ?, ?, ?, ?,?)";
+public class CartePostaleJdbcImpl implements DAO<CartePostale> {
+    private static final String SQL_INSERT = "INSERT INTO produit (refProd, libelle, marque, prixUnitaire, qteStock, typeCarte) VALUES (?, ?, ?, ?, ?, ?)";
 
-    public void insert(final Glace obj) throws DALException {
+    @Override
+    public void insert(final CartePostale obj) throws DALException {
         try (Connection connection = jdbcTools.getConnection()) {
             try (PreparedStatement statement = connection.prepareStatement(SQL_INSERT)) {
                 statement.setInt(1, obj.getRefProd());
@@ -21,14 +20,11 @@ public class GlaceJdbcImpl implements DAO<Glace> {
                 statement.setString(3, obj.getMarque());
                 statement.setDouble(4, obj.getPrixUnitaire());
                 statement.setInt(5, obj.getQteStock());
-                statement.setString(6, obj.getParfum());
-                statement.setInt(7, obj.getTemperatureConservation());
-                statement.setDate(8, Date.valueOf(ProduitPerissable.getDateLimiteConso()));
+                statement.setString(6, String.valueOf(obj.getType()));
                 statement.executeUpdate();
             }
         } catch (SQLException e) {
-            throw new DALException("Insert failed", e.getCause());
+            throw new RuntimeException(e);
         }
-
     }
 }
